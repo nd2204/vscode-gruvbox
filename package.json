@@ -1,0 +1,21 @@
+{
+  "name": "gruvbox-material-mix",
+  "displayName": "Gruvbox Material Mix",
+  "description": "My own personal touch of gruvbox material palette",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gruvbox Material Mixx",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Gruvbox Material Mixx-color-theme.json"
+      }
+    ]
+  }
+}
