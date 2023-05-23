@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Gruvbox Material Mixx",
+        "label": "Gruvbox Material Mix",
         "uiTheme": "vs-dark",
-        "path": "./themes/Gruvbox Material Mixx-color-theme.json"
+        "path": "./themes/gruvbox-material-mix-color-theme.json"
       }
     ]
   }
