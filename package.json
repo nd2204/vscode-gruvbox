@@ -2,7 +2,7 @@
   "name": "gruvbox-material-mix",
   "displayName": "Gruvbox Material Mix",
   "description": "My own personal touch of gruvbox material palette",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.78.0"
   },
