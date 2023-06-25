@@ -123,7 +123,7 @@
       "name": "Comment Markup Link",
       "scope": "comment markup.link",
       "settings": {
-        "foreground": "#8bba7f"
+        "foreground": "#3c3836"
       }
     },
     {
@@ -1706,7 +1706,7 @@
         "beginning.punctuation.definition.list.markdown.xi"
       ],
       "settings": {
-        "foreground": "#8bba7f"
+        "foreground": "#3c3836"
       }
     },
     {
@@ -1790,7 +1790,7 @@
       "scope": "comment, punctuation.definition.comment",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#8bba7f"
+        "foreground": "#3c3836"
       }
     },
     {
@@ -1862,16 +1862,16 @@
     "sideBarSectionHeader.border": "#fbf1c700",
     "sideBarTitle.foreground": "#b0b846",
     "sideBar.border": "#1d2021",
-    "list.inactiveSelectionBackground": "#141617",
+    "list.inactiveSelectionBackground": "#1d2021",
     "list.inactiveSelectionForeground": "#b0b846",
-    "list.hoverBackground": "#282828",
+    "list.hoverBackground": "#1d2021",
     "list.hoverForeground": "#b0b846",
-    "list.activeSelectionBackground": "#141617",
+    "list.activeSelectionBackground": "#1d2021",
     "list.activeSelectionForeground": "#b0b856",
     "tree.indentGuidesStroke": "#fbf1c733",
     "list.dropBackground": "#141617",
     "list.highlightForeground": "#f28534",
-    "list.focusBackground": "#141617",
+    "list.focusBackground": "#1d2021",
     "list.focusForeground": "#fbf1c7",
     "listFilterWidget.background": "#80aa9e",
     "listFilterWidget.outline": "#00000000",
@@ -1902,12 +1902,12 @@
     "menu.separatorBackground": "#fbf1c733",
     "menu.border": "#141617",
     "button.background": "#b0b846",
-    "button.foreground": "#ffffff",
+    "button.foreground": "#282828",
     "button.hoverBackground": "#b0b84699",
     "button.secondaryForeground": "#fbf1c7",
-    "button.secondaryBackground": "#141617",
-    "button.secondaryHoverBackground": "#28282899",
-    "input.background": "#141617",
+    "button.secondaryBackground": "#1d2021",
+    "button.secondaryHoverBackground": "#1d202199",
+    "input.background": "#1d2021",
     "input.border": "#00000000",
     "input.foreground": "#fbf1c7",
     "inputOption.activeBackground": "#b0b84666",
@@ -2017,7 +2017,7 @@
     "progressBar.background": "#b0b846",
     "widget.shadow": "#00000070",
     "editorWidget.foreground": "#fbf1c7",
-    "editorWidget.background": "#1d2021",
+    "editorWidget.background": "#141617",
     "editorWidget.resizeBorder": "#5f5f5f33",
     "pickerGroup.border": "#00000000",
     "pickerGroup.foreground": "#e9b143",
