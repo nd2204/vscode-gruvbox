@@ -2011,7 +2011,7 @@
     "tab.activeBorderTop": "#b0b846",
     "tab.inactiveBackground": "#141617",
     "tab.inactiveForeground": "#ebdbb250",
-    "tab.hoverBackground": "#14161770",
+    "tab.hoverBackground": "#00000000",
     "scrollbarSlider.background": "#282828",
     "scrollbarSlider.hoverBackground": "#28282890",
     "scrollbarSlider.activeBackground": "#ffffff12",
