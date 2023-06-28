@@ -1963,10 +1963,10 @@
         "editorGutter.deletedBackground": "#F25F4B",
         "editorGutter.foldingControlForeground": "#c5c5c5",
         "editorCodeLens.foreground": "#999999",
-        "editorGroup.border": "#16191A",
+        "editorGroup.border": "#323435",
         "diffEditor.insertedTextBackground": "#9bb95533",
         "diffEditor.removedTextBackground": "#ff000033",
-        "diffEditor.border": "#16191A",
+        "diffEditor.border": "#323435",
         // Terminal
         "panel.background": "#141617",
         "panel.border": "#ebdbb233",
