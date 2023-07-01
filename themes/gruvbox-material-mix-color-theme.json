@@ -1742,7 +1742,7 @@
                 "constant.other.color.rgb-value.xi"
             ],
             "settings": {
-                "foreground": "#ffffff"
+                "foreground": "#f28534"
             }
         },
         {
@@ -1850,7 +1850,7 @@
         "selection.background": "#80aa9e",
         "scrollbar.shadow": "#00000000",
         "activityBar.foreground": "#ebdbb2",
-        "activityBar.background": "#141617",
+        "activityBar.background": "#16191A",
         "activityBar.inactiveForeground": "#323435",
         "activityBarBadge.foreground": "#16191A",
         "activityBarBadge.background": "#b0b846",

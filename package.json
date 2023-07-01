@@ -20,6 +20,11 @@
         "label": "Gruvbox Material Mix",
         "uiTheme": "vs-dark",
         "path": "./themes/gruvbox-material-mix-color-theme.json"
+      },
+      {
+        "label": "Spiral Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/spiral-color-theme.json"
       }
     ]
   }
