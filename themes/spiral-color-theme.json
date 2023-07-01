@@ -2050,7 +2050,7 @@
     "merge.incomingContentBackground": "#28384B",
     "merge.commonHeaderBackground": "#383838",
     "merge.commonContentBackground": "#282828",
-    "editorSuggestWidget.background": "#252526",
+    "editorSuggestWidget.background": "#0a0f16",
     "editorSuggestWidget.border": "#2d2f37",
     "editorSuggestWidget.foreground": "#c8cccd",
     "editorSuggestWidget.highlightForeground": "#f6bead",
