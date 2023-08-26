@@ -15,6 +15,17 @@
     },
     "tokenColors": [
         {
+            "name": "Html tags",
+            "scope": [
+                "punctuation.definition.tag.begin.html",
+                "punctuation.definition.tag.end.html",
+                "entity.name.tag.html"
+            ],
+            "settings": {
+                "foreground": "#f28534",
+            }
+        },
+        {
             "name": "unison punctuation",
             "scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
             "settings": {
@@ -1940,8 +1951,8 @@
         "editor.lineHighlightBorder": "#282828",
         "editorLineNumber.activeForeground": "#ebdbb2",
         "editorLink.activeForeground": "#80aa9e",
-        "editorIndentGuide.background": "#282828",
-        "editorIndentGuide.activeBackground": "#282828",
+        "editorIndentGuide.background1": "#282828",
+        "editorIndentGuide.activeBackground1": "#282828",
         "editorRuler.foreground": "#282828",
         "editorBracketMatch.background": "#0064001a",
         "editorBracketMatch.border": "#888888",
