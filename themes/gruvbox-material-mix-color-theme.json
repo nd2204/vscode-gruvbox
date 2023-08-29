@@ -2115,5 +2115,6 @@
         "editorGutter.commentRangeForeground": "#c5c5c5",
         "debugExceptionWidget.background": "#16191A",
         "debugExceptionWidget.border": "#ebdbb233",
+        "editorBracketPairGuide.activeBackground1": "#ebdbb2cc"
     }
 }
