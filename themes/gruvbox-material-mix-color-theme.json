@@ -1952,7 +1952,7 @@
         "editorLineNumber.activeForeground": "#ebdbb2",
         "editorLink.activeForeground": "#80aa9e",
         "editorIndentGuide.background1": "#282828",
-        "editorIndentGuide.activeBackground1": "#282828",
+        "editorIndentGuide.activeBackground1": "#b0b846",
         "editorRuler.foreground": "#282828",
         "editorBracketMatch.background": "#0064001a",
         "editorBracketMatch.border": "#888888",
@@ -2114,6 +2114,6 @@
         "breadcrumb.activeSelectionForeground": "#ebdbb2cc",
         "editorGutter.commentRangeForeground": "#c5c5c5",
         "debugExceptionWidget.background": "#16191A",
-        "debugExceptionWidget.border": "#ebdbb233"
+        "debugExceptionWidget.border": "#ebdbb233",
     }
 }
