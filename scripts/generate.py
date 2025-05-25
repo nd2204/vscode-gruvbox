@@ -24,7 +24,7 @@ colorscheme = {
   "yellow": "#fabd2f",
   "green": "#b8bb26",
   "aqua": "#8ec07c",
-  "blue": "#83a598",
+  "blue": "#8AA98A",
   "purple": "#d3869b",
   "bg_red": "#fb4934",
   "bg_yellow": "#fabd2f",
@@ -147,6 +147,13 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.definition.end.bracket.square",
                 "punctuation.section.angle-brackets.begin.template",
                 "punctuation.section.angle-brackets.end.template",
+                "punctuation.parenthesis.close",
+                "punctuation.parenthesis.open",
+                "punctuation.curlybrace.close",
+                "punctuation.curlybrace.open",
+                "punctuation.definition.typeparameters.begin",
+                "punctuation.definition.typeparameters.end",
+                "punctuation.accessor.cs",
                 "punctuation.terminator.statement"
             ],
             "settings": {{
@@ -229,6 +236,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "keyword.operator.logical.php",
                 "keyword.operator.bitwise.php",
                 "keyword.operator.arithmetic.php",
+                "keyword.operator.arrow.cs",
                 "entity.name.namespace",
                 "entity.name.type.namespace",
                 "entity.name.type.class",
@@ -422,6 +430,7 @@ def generate_theme(name: str, colors: dict) -> str:
         {{
             "scope": [
                 "storage.type.built-in",
+                "storage.type.function.python",
                 "entity.name.scope-resolution",
                 "entity.name.type",
                 "meta.body.class",
@@ -523,6 +532,9 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.definition.section.switch-block.begin.bracket.curly.php",
                 "punctuation.definition.section.switch-block.end.bracket.curly.php",
                 "punctuation.definition.block.sequence.item.yaml",
+                "punctuation.squarebracket.open.cs",
+                "punctuation.squarebracket.close.cs",
+                "punctuation.accessor.cs",
                 "support.type.property-name",
                 "support.constant.property-value",
                 "support.type.property-name.json",
@@ -622,9 +634,10 @@ def generate_theme(name: str, colors: dict) -> str:
                 "storage.type.haskell",
                 "keyword.operator.quantifier.regexp",
                 "keyword.other.unit",
+                "keyword.operator.less",
                 "inline-color-decoration rgb-value",
                 "token.warn-token",
-                "control.elements, keyword.operator.less",
+                "control.elements",
                 "wikiword.xi",
                 "less rgb-value",
                 "markup.bold",
@@ -636,6 +649,8 @@ def generate_theme(name: str, colors: dict) -> str:
         }},
         {{
             "scope": [
+                "variable.other.object.property",
+                "entity.name.variable.property",
                 "variable.other.enummember"
             ],
             "settings": {{
