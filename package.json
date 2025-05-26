@@ -2,7 +2,7 @@
   "name": "gruvbox-material-mix",
   "displayName": "Gruvbox Material Mix",
   "description": "My own personal touch of gruvbox material palette",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -20,6 +20,11 @@
         "label": "Gruvbox Material Mix",
         "uiTheme": "vs-dark",
         "path": "./themes/gruvbox_material_mix.json"
+      },
+      {
+        "label": "Gruvbox Material Mix Amoled",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gruvbox_material_mix_amoled.json"
       },
       {
         "label": "Spiral Theme",
