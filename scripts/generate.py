@@ -40,66 +40,10 @@ def generate_theme(name: str, colors: dict) -> str:
     }},
     "tokenColors": [
         {{
-            "name": "unison punctuation",
-            "scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
-            "name": "support.variable.magic.python",
-            "scope": "support.variable.magic.python",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
-            "name": "storage.modifier.lifetime.rust",
-            "scope": "storage.modifier.lifetime.rust",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
-            "name": "variable.language.rust",
-            "scope": "variable.language.rust",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
-            "name": "regexp constant character-class",
-            "scope": "constant.other.character-class.regexp",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
-            "name": "Text",
-            "scope": "variable.parameter.function",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
             "name": "Comment Markup Link",
             "scope": "comment markup.link",
             "settings": {{
                 "foreground": "#7c6f64"
-            }}
-        }},
-        {{
-            "name": "deleted.diff",
-            "scope": "markup.deleted.diff",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
-            }}
-        }},
-        {{
-            "name": "c++ function",
-            "scope": "meta.function.c,meta.function.cpp",
-            "settings": {{
-                "foreground": "{colors['fg0']}"
             }}
         }},
         {{
@@ -190,39 +134,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "keyword.other.array.phpdoc.php",
                 "keyword.control.xi",
                 "keyword.operator",
-                "keyword.operator.expression.instanceof",
-                "keyword.operator.new",
-                "keyword.operator.ternary",
-                "keyword.operator.optional",
-                "keyword.operator.expression.keyof",
-                "keyword.operator.sigil.rust",
-                "keyword.operator.delete",
-                "keyword.operator.arithmetic",
-                "keyword.operator.comparison,keyword.operator.decrement",
-                "keyword.operator.increment,keyword.operator.relational",
-                "keyword.operator.comparison.c",
-                "keyword.operator.comparison.cpp",
-                "keyword.operator.c",
-                "keyword.operator.cpp",
-                "keyword.operator.increment.c",
-                "keyword.operator.increment.cpp",
-                "keyword.operator.decrement.c",
-                "keyword.operator.decrement.cpp",
-                "keyword.operator.bitwise",
-                "keyword.operator.bitwise.shift.c",
-                "keyword.operator.bitwise.shift.cpp",
-                "keyword.operator.assignment.compound.js",
-                "keyword.operator.assignment.compound.ts",
-                "keyword.operator.assignment",
-                "keyword.operator.assignment.go",
-                "keyword.operator.assignment.c",
-                "keyword.operator.assignment.cpp",
-                "keyword.operator.comparison.php",
-                "keyword.operator.logical",
-                "keyword.operator.logical.php",
-                "keyword.operator.bitwise.php",
-                "keyword.operator.arithmetic.php",
-                "keyword.operator.arrow.cs",
                 "entity.name.namespace",
                 "entity.name.type.namespace",
                 "entity.name.type.class",
@@ -243,6 +154,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "entity.other.alias.php",
                 "entity.other.inherited-class",
                 "entity.global.clojure",
+                "entity.name.function.destructor.cpp",
                 "constant.other.symbol",
                 "constant.other.color.rgb-value.xi",
                 "constant.language.symbol.elixir",
@@ -429,14 +341,25 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.separator.delimiter",
                 "punctuation.separator.period.java",
                 "punctuation.separator.list.comma.css",
+                "punctuation.definition.delayed.unison",
+                "punctuation.definition.list.begin.unison",
+                "punctuation.definition.list.end.unison",
+                "punctuation.definition.ability.begin.unison",
+                "punctuation.definition.ability.end.unison",
+                "punctuation.operator.assignment.as.unison",
+                "punctuation.separator.pipe.unison",
+                "punctuation.separator.delimiter.unison",
+                "punctuation.definition.hash.unison",
                 "support.type.property-name",
                 "support.constant.property-value",
                 "support.type.property-name.json",
                 "support.type.property-name.json punctuation",
-                "function.parameter",
-                "function.brace",
-                "function.parameter.ruby",
-                "function.parameter.cs",
+                "support.variable.property",
+                "support.variable.object.process",
+                "support.variable.object.node",
+                "support.variable.dom",
+                "support.variable.property.dom",
+                "support.type.object.console",
                 "entity.name.tag",
                 "entity.name.section.markdown",
                 "entity.name.variable.local.cs",
@@ -456,8 +379,18 @@ def generate_theme(name: str, colors: dict) -> str:
                 "meta.definition.variable.name.java",
                 "meta.method-call.java",
                 "meta.method.identifier.java",
+                "meta.function.c",
+                "meta.function.cpp",
+                "meta.object-literal.key",
+                "function.parameter",
+                "function.brace",
+                "function.parameter.ruby",
+                "function.parameter.cs",
+                "keyword.operator.misc.rust",
+                "token.variable.parameter.java",
                 "source.json meta.structure.dictionary.json > string.quoted.json",
                 "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
+                "token.package",
                 "invalid.illegal.bad-ampersand.html",
                 "beginning.punctuation.definition.list.markdown",
                 "block.scope.end",
@@ -465,23 +398,23 @@ def generate_theme(name: str, colors: dict) -> str:
                 "entity.name.label.cs",
                 "text.variable",
                 "text.bracketed",
+                "variable",
+                "variable.c",
+                "variable.parameter.function",
+                "variable.language.rust",
+                "variable.other.class.php",
+                "variable.other.readwrite",
                 "variable.parameter.function.coffee",
                 "variable.parameter.function.js",
                 "constant.character.entity",
                 "constant.character.character-class.regexp.xi",
+                "constant.other.character-class.regexp",
                 "selector.sass",
                 "invalid.xi",
                 "source.java",
-                "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
-                "keyword.operator.misc.rust",
-                "support.variable.dom,support.variable.property.dom",
-                "support.type.object.console",
-                "keyword.operator",
-                "variable",
-                "variable.c",
-                "token.variable.parameter.java",
-                "token.package",
-                "variable.other.class.php"
+                "support.variable.magic.python",
+                "storage.modifier.lifetime.rust",
+                "markup.deleted.diff"
             ],
             "settings": {{
                 "foreground": "{colors['fg0']}"
@@ -657,27 +590,35 @@ def generate_theme(name: str, colors: dict) -> str:
         "foreground": "{colors['fg0']}",
         "focusBorder": "{colors['green']}",
         "selection.background": "{colors['blue']}",
+
         "scrollbar.shadow": "#00000000",
+        "scrollbarSlider.background": "{colors['bg2']}",
+        "scrollbarSlider.hoverBackground": "{colors['bg2']}90",
+        "scrollbarSlider.activeBackground": "{colors['fg0']}12",
+
         "activityBar.foreground": "{colors['fg0']}",
         "activityBar.background": "{colors['bg0']}",
         "activityBar.inactiveForeground": "{colors['bg3']}",
         "activityBarBadge.foreground": "{colors['bg0']}",
         "activityBarBadge.background": "{colors['green']}",
         "activityBar.border": "{colors['bg3']}",
+
         "sideBar.background": "{colors['bg_dim']}",
+        "sideBar.dropBackground": "{colors['bg_dim']}",
         "sideBar.foreground": "{colors['fg0']}",
+        "sideBar.border": "{colors['bg3']}",
         "sideBarSectionHeader.background": "{colors['bg0']}",
         "sideBarSectionHeader.foreground": "{colors['green']}",
         "sideBarSectionHeader.border": "{colors['fg0']}00",
         "sideBarTitle.foreground": "{colors['green']}",
-        "sideBar.border": "{colors['bg3']}",
+
+        "tree.indentGuidesStroke": "{colors['fg0']}33",
         "list.inactiveSelectionBackground": "{colors['bg0']}",
         "list.inactiveSelectionForeground": "{colors['green']}",
         "list.hoverBackground": "{colors['bg0']}",
         "list.hoverForeground": "{colors['green']}",
         "list.activeSelectionBackground": "{colors['bg0']}",
         "list.activeSelectionForeground": "#b0b856",
-        "tree.indentGuidesStroke": "{colors['fg0']}33",
         "list.dropBackground": "{colors['bg_dim']}",
         "list.highlightForeground": "{colors['orange']}",
         "list.focusBackground": "{colors['bg0']}",
@@ -685,6 +626,7 @@ def generate_theme(name: str, colors: dict) -> str:
         "listFilterWidget.background": "{colors['blue']}",
         "listFilterWidget.outline": "#00000000",
         "listFilterWidget.noMatchesOutline": "{colors['red']}00",
+
         "statusBar.foreground": "{colors['fg0']}",
         "statusBar.background": "{colors['bg_dim']}",
         "statusBarItem.hoverBackground": "{colors['bg0']}",
@@ -695,11 +637,13 @@ def generate_theme(name: str, colors: dict) -> str:
         "statusBar.noFolderForeground": "{colors['fg0']}",
         "statusBarItem.remoteBackground": "{colors['green']}",
         "statusBarItem.remoteForeground": "{colors['bg_dim']}",
+
         "titleBar.activeBackground": "{colors['bg_dim']}",
         "titleBar.activeForeground": "{colors['fg0']}",
         "titleBar.inactiveBackground": "{colors['bg_dim']}",
         "titleBar.inactiveForeground": "{colors['fg0']}99",
         "titleBar.border": "{colors['bg3']}",
+
         "menubar.selectionForeground": "{colors['green']}",
         "menubar.selectionBackground": "{colors['bg0']}",
         "menubar.selectionBorder": "#ff000000",
@@ -710,28 +654,34 @@ def generate_theme(name: str, colors: dict) -> str:
         "menu.selectionBorder": "#00000000",
         "menu.separatorBackground": "{colors['fg0']}33",
         "menu.border": "{colors['bg_dim']}",
+
         "button.background": "{colors['green']}",
         "button.foreground": "{colors['bg2']}",
         "button.hoverBackground": "{colors['green']}99",
         "button.secondaryForeground": "{colors['fg0']}",
         "button.secondaryBackground": "{colors['bg0']}",
         "button.secondaryHoverBackground": "{colors['bg0']}99",
-        "input.background": "{colors['bg0']}",
+
+        "input.background": "{colors['bg1']}",
         "input.border": "#00000000",
         "input.foreground": "{colors['fg0']}",
         "inputOption.activeBackground": "{colors['green']}66",
         "inputOption.activeBorder": "#007acc00",
         "inputOption.activeForeground": "{colors['fg0']}",
         "input.placeholderForeground": "{colors['fg0']}33",
+
         "textLink.foreground": "{colors['blue']}",
-        "editor.background": "{colors['bg0']}",
-        "editor.foreground": "{colors['fg0']}",
-        "editorLineNumber.foreground": "#928374",
+
+        "editorLink.activeForeground": "{colors['blue']}",
+        "editorLineNumber.foreground": "{colors['grey0']}",
+        "editorLineNumber.activeForeground": "{colors['fg0']}",
         "editorCursor.foreground": "{colors['fg0']}66",
         "editorCursor.background": "{colors['fg0']}",
+        "editorWhitespace.foreground": "#e2cca929",
+        "editor.background": "{colors['bg0']}",
+        "editor.foreground": "{colors['fg0']}",
         "editor.selectionBackground": "{colors['bg4']}",
         "editor.inactiveSelectionBackground": "{colors['bg2']}90",
-        "editorWhitespace.foreground": "#e2cca929",
         "editor.selectionHighlightBackground": "#add6ff26",
         "editor.selectionHighlightBorder": "#495F77",
         "editor.findMatchBackground": "#515c6a",
@@ -747,14 +697,12 @@ def generate_theme(name: str, colors: dict) -> str:
         "editor.wordHighlightBackground": "#575757b8",
         "editor.lineHighlightBackground": "{colors['fg0']}0A",
         "editor.lineHighlightBorder": "{colors['bg2']}",
-        "editorLineNumber.activeForeground": "{colors['fg0']}",
-        "editorLink.activeForeground": "{colors['blue']}",
+        "editor.foldBackground": "#264f784d",
         "editorIndentGuide.background1": "{colors['bg2']}",
         "editorIndentGuide.activeBackground1": "{colors['green']}",
         "editorRuler.foreground": "{colors['bg2']}",
         "editorBracketMatch.background": "#0064001a",
         "editorBracketMatch.border": "#888888",
-        "editor.foldBackground": "#264f784d",
         "editorOverviewRuler.background": "#25252500",
         "editorOverviewRuler.border": "#7f7f7f4d",
         "editorError.foreground": "#f48771",
@@ -784,10 +732,11 @@ def generate_theme(name: str, colors: dict) -> str:
         "panelTitle.inactiveForeground": "{colors['fg0']}99",
         "badge.background": "{colors['orange']}",
         "badge.foreground": "{colors['bg0']}",
-        "terminal.foreground": "{colors['fg0']}",
-        "terminal.selectionBackground": "{colors['bg2']}40",
+
         "terminalCursor.background": "{colors['green']}",
         "terminalCursor.foreground": "{colors['fg0']}ee",
+        "terminal.foreground": "{colors['fg0']}",
+        "terminal.selectionBackground": "{colors['bg4']}cc",
         "terminal.border": "{colors['bg0']}",
         "terminal.ansiBlack": "{colors['bg2']}",
         "terminal.ansiBlue": "{colors['blue']}",
@@ -809,6 +758,8 @@ def generate_theme(name: str, colors: dict) -> str:
         "breadcrumb.background": "{colors['bg0']}",
         "breadcrumb.foreground": "{colors['fg0']}cc",
         "breadcrumb.focusForeground": "{colors['fg0']}cc",
+        "breadcrumb.activeSelectionForeground": "{colors['fg0']}cc",
+
         "editorGroupHeader.tabsBackground": "{colors['bg_dim']}",
         "editorGroupHeader.tabsBorder": "{colors['bg3']}",
         "editorGroupHeader.border": "{colors['bg3']}",
@@ -820,9 +771,6 @@ def generate_theme(name: str, colors: dict) -> str:
         "tab.inactiveBackground": "{colors['bg_dim']}",
         "tab.inactiveForeground": "{colors['fg0']}50",
 
-        "scrollbarSlider.background": "{colors['bg2']}",
-        "scrollbarSlider.hoverBackground": "{colors['bg2']}90",
-        "scrollbarSlider.activeBackground": "{colors['fg0']}12",
         "progressBar.background": "{colors['green']}",
         "widget.shadow": "#00000070",
         "editorWidget.foreground": "{colors['fg0']}",
@@ -894,6 +842,7 @@ def generate_theme(name: str, colors: dict) -> str:
         "dropdown.background": "{colors['bg_dim']}",
         "dropdown.foreground": "{colors['fg0']}",
         "dropdown.border": "#00000000",
+
         "minimapGutter.addedBackground": "{colors['green']}",
         "minimapGutter.modifiedBackground": "{colors['blue']}",
         "minimapGutter.deletedBackground": "{colors['red']}",
@@ -902,14 +851,13 @@ def generate_theme(name: str, colors: dict) -> str:
         "minimap.errorHighlight": "#f48771",
         "minimap.warningHighlight": "#cca700",
         "minimap.background": "{colors['bg_dim']}",
-        "sideBar.dropBackground": "{colors['bg_dim']}",
+
         "editorGroup.emptyBackground": "{colors['bg_dim']}",
         "panelSection.border": "{colors['fg0']}33",
         "statusBarItem.activeBackground": "{colors['fg0']}25",
         "settings.headerForeground": "{colors['fg0']}",
         "settings.focusedRowBackground": "{colors['fg0']}07",
         "walkThrough.embeddedEditorBackground": "#00000050",
-        "breadcrumb.activeSelectionForeground": "{colors['fg0']}cc",
         "editorGutter.commentRangeForeground": "#c5c5c5",
         "debugExceptionWidget.background": "{colors['bg0']}",
         "debugExceptionWidget.border": "{colors['fg0']}33",
