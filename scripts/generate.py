@@ -29,7 +29,7 @@ def generate_theme(name: str, colors: dict) -> str:
     "semanticHighlighting": true,
     "semanticTokenColors": {{
         "enumMember": {{
-            "foreground": "{colors['orange']}"
+            "foreground": "{colors['blue']}"
         }},
         "variable.constant": {{
             "foreground": "{colors['purple']}"
@@ -61,12 +61,16 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.section.parameters.end.bracket",
                 "punctuation.separator",
                 "punctuation.separator.delimiter.comma",
-                "punctuation.definition.capture.begin.lambda",
-                "punctuation.definition.capture.end.lambda",
                 "punctuation.definition.begin.bracket.square",
                 "punctuation.definition.end.bracket.square",
                 "punctuation.section.angle-brackets.begin.template",
                 "punctuation.section.angle-brackets.end.template",
+                "punctuation.definition.capture.begin.lambda",
+                "punctuation.definition.capture.end.lambda",
+                "punctuation.definition.parameters.begin.lambda",
+                "punctuation.definition.parameters.end.lambda",
+                "punctuation.definition.parameters.begin.lambda.cpp",
+                "punctuation.definition.parameters.end.lambda.cpp",
                 "punctuation.definition.arguments.begin.python",
                 "punctuation.definition.arguments.end.python",
                 "punctuation.definition.parameters.begin.python",
@@ -84,8 +88,12 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.curlybrace.open",
                 "punctuation.definition.typeparameters.begin",
                 "punctuation.definition.typeparameters.end",
+                "punctuation.definition.parameters.begin.preprocessor",
+                "punctuation.definition.parameters.end.preprocessor",
+                "punctuation.definition.logical-expression.shell",
                 "punctuation.accessor.cs",
-                "punctuation.terminator.statement"
+                "punctuation.terminator.statement",
+                "meta.template.call.cpp"
             ],
             "settings": {{
                 "foreground": "{colors['grey0']}"
@@ -113,7 +121,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "support.other.namespace.use-as.php",
                 "support.other.namespace.php",
                 "support.token.decorator.python",
-                "support.class",
                 "support.function",
                 "support.variable.semantic.hlsl",
                 "variable.other.class.js",
@@ -136,7 +143,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "keyword.operator",
                 "entity.name.namespace",
                 "entity.name.type.namespace",
-                "entity.name.type.class",
                 "entity.name.class.identifier.namespace.type",
                 "entity.name.class",
                 "entity.name.type",
@@ -145,7 +151,9 @@ def generate_theme(name: str, colors: dict) -> str:
                 "entity.name.label.cs",
                 "entity.name.scope-resolution.function.call",
                 "entity.name.scope-resolution.function.definition",
+                "entity.name.function.operator.member.cpp",
                 "entity.name.function.xi",
+                "entity.name.function.operator.cpp",
                 "entity.name.class.xi",
                 "entity.name.package.go",
                 "entity.name.lifetime.rust",
@@ -155,6 +163,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "entity.other.inherited-class",
                 "entity.global.clojure",
                 "entity.name.function.destructor.cpp",
+                "entity.name.operator.type.pointer.cpp",
                 "constant.other.symbol",
                 "constant.other.color.rgb-value.xi",
                 "constant.language.symbol.elixir",
@@ -163,6 +172,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "constant.language.symbol.ruby",
                 "punctuation.definition.tag.begin.html",
                 "punctuation.definition.tag.end.html",
+                "punctuation.definition.function.pointer.dereference.cpp",
                 "punctuation.definition.bold",
                 "punctuation.separator.pointer-access",
                 "source.makefile",
@@ -215,13 +225,15 @@ def generate_theme(name: str, colors: dict) -> str:
         }},
         {{
             "scope": [
+                "support.class",
+                "storage.type",
                 "storage.type.built-in",
                 "storage.type.function.python",
+                "entity.name.type.class",
                 "entity.name.scope-resolution",
                 "entity.name.type",
                 "meta.body.class",
                 "token.storage"
-
             ],
             "settings": {{
                 "foreground": "{colors['yellow']}"
@@ -265,10 +277,23 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.separator.cpp",
                 "token.debug-token",
                 "token.package.keyword",
-                "storage.type.class",
+                "storage.type.template",
+                "storage.type.template.argument.class",
+                "storage.modifier",
+                "storage.modifier.specifier.functional.pre-parameters",
+                "storage.modifier.specifier.functional.post-parameters",
                 "storage.type.enum.cpp",
+                "storage.type.class",
+                "storage.modifier.const.cpp",
+                "storage.modifier.specifier.const.cpp",
+                "storage.modifier.constexpr.cpp",
                 "storage.type.modifier.access.control",
+                "storage.type.modifier.access",
+                "storage.type.struct.cpp",
+                "storage.modifier.specifier.const",
+                "storage.type.function.shell",
                 "storage.modifier.inline",
+                "storage.modifier.static",
                 "storage.modifier.specifier.static",
                 "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
                 "texthtml.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
@@ -278,6 +303,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "emphasis md",
                 "meta.selector",
                 "constant.regexp.xi",
+                "variable.language.this.cpp",
                 "variable.other.generic-type.haskell"
             ],
             "settings": {{
@@ -438,6 +464,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "meta.definition.class.inherited.classes.groovy",
                 "meta.require",
                 "entity.name.function",
+                "entity.name.function.call.cpp",
                 "entity.name.function,support.function.console",
                 "source.ini",
                 "punctuation.definition.string.begin,punctuation.definition.string.end",
@@ -456,6 +483,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "constant.character.format.placeholder.other.python",
                 "entity.other.attribute-name",
                 "entity.other.attribute-name.class.css",
+                "entity.name.function.preprocessor.cpp",
                 "punctuation.definition.bold.markdown",
                 "punctuation.definition.constant",
                 "support.constant.property.math",
@@ -492,8 +520,8 @@ def generate_theme(name: str, colors: dict) -> str:
         {{
             "scope": [
                 "variable.other.object.property",
+                "variable.other.property.cpp",
                 "entity.name.variable.property",
-                "variable.other.enummember"
             ],
             "settings": {{
                 "foreground": "{colors['blue']}"
