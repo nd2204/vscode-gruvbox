@@ -35,7 +35,7 @@ def generate_theme(name: str, colors: dict) -> str:
             "foreground": "{colors['purple']}"
         }},
         "variable.defaultLibrary": {{
-            "foreground": "{colors['orange']}"
+            "foreground": "{colors['green']}"
         }}
     }},
     "tokenColors": [
@@ -65,6 +65,10 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.definition.end.bracket.square",
                 "punctuation.section.angle-brackets.begin.template",
                 "punctuation.section.angle-brackets.end.template",
+                "punctuation.section.arguments.begin.bracket.round.function.member.cpp",
+                "punctuation.section.arguments.end.bracket.round.function.member.cpp",
+                "punctuation.section.arguments.begin.bracket.round.function.member.c",
+                "punctuation.section.arguments.end.bracket.round.function.member.c",
                 "punctuation.definition.capture.begin.lambda",
                 "punctuation.definition.capture.end.lambda",
                 "punctuation.definition.parameters.begin.lambda",
@@ -121,7 +125,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "support.other.namespace.use-as.php",
                 "support.other.namespace.php",
                 "support.token.decorator.python",
-                "support.function",
                 "support.variable.semantic.hlsl",
                 "variable.other.class.js",
                 "variable.other.class.ts",
@@ -141,7 +144,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "keyword.other.array.phpdoc.php",
                 "keyword.control.xi",
                 "keyword.operator",
-                "entity.name.namespace",
                 "entity.name.type.namespace",
                 "entity.name.class.identifier.namespace.type",
                 "entity.name.class",
@@ -231,6 +233,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "storage.type.function.python",
                 "entity.name.type.class",
                 "entity.name.scope-resolution",
+                "entity.name.namespace",
                 "entity.name.type",
                 "meta.body.class",
                 "token.storage"
@@ -258,7 +261,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "keyword.operator.type.php",
                 "keyword.operator.heredoc.php",
                 "keyword.operator.nowdoc.php",
-                "keyword.operator.assignment.compound",
                 "keyword.operator.logical.python",
                 "keyword.operator.instanceof.java",
                 "support.constant.edge",
@@ -279,6 +281,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "token.package.keyword",
                 "storage.type.template",
                 "storage.type.template.argument.class",
+                "storage.type.namespace.definition.cpp",
                 "storage.modifier",
                 "storage.modifier.specifier.functional.pre-parameters",
                 "storage.modifier.specifier.functional.post-parameters",
@@ -405,8 +408,6 @@ def generate_theme(name: str, colors: dict) -> str:
                 "meta.definition.variable.name.java",
                 "meta.method-call.java",
                 "meta.method.identifier.java",
-                "meta.function.c",
-                "meta.function.cpp",
                 "meta.object-literal.key",
                 "function.parameter",
                 "function.brace",
@@ -462,6 +463,8 @@ def generate_theme(name: str, colors: dict) -> str:
                 "markup.inline.raw.string.markdown",
                 "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
                 "meta.definition.class.inherited.classes.groovy",
+                "meta.function.c",
+                "meta.function.cpp",
                 "meta.require",
                 "entity.name.function",
                 "entity.name.function.call.cpp",
@@ -470,6 +473,7 @@ def generate_theme(name: str, colors: dict) -> str:
                 "punctuation.definition.string.begin,punctuation.definition.string.end",
                 "beginning.punctuation.definition.quote.markdown.xi",
                 "variable.function",
+                "support.function",
                 "support.function.any-method"
             ],
             "settings": {{
